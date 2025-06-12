@@ -1,0 +1,529 @@
+/* General CSS */
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(1.75rem, 0.8856rem + 2.766vw, 3.375rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 0.8019rem + 2.234vw, 2.8125rem);
+}
+
+h5 {
+    font-size: clamp(1.25rem, 1.117rem + 0.4255vw, 1.5rem);
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background-color: #E91A2C;
+    color: #fff;
+    border: none;
+    padding: 15px 28px 14px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    background-color: #F8BAC0 !important;
+    color: #E91A2C;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000 !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    height: 44px;
+}
+
+.btn-secondary:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* General CSS End */
+
+
+/* Header section CSS starts here */
+
+header {
+    max-height: 551px;
+    overflow: hidden;
+    position: relative;
+}
+
+header .left-section .btn {
+    z-index: 1;
+}
+
+header p {
+    max-width: 525px;
+}
+
+.blue-shape {
+    position: absolute;
+    bottom: -155px;
+    left: -135px;
+    z-index: -1;
+}
+
+.orange-shape {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+.green-shape {
+    position: absolute;
+    bottom: -40px;
+    right: 170px;
+    z-index: -1;
+}
+
+.word {
+    overflow: hidden;
+}
+
+/* masking using css */
+
+/* .overlay-image {
+    width: 724px;
+    height: 710px;
+    -webkit-mask-image: url('../images/vector-filled.png');
+    mask-image: url('../images/vector-filled.png');
+    mask-mode: alpha;
+    position: relative;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 2px black);
+
+}
+
+.overlay-shape {
+    position: relative;
+    top: -13px;
+    left: -2px;
+} */
+
+.image-section {
+    position: relative;
+    right: 50px;
+    top: -100px;
+    width: 564px;
+    height: 651px;
+}
+
+.learning {
+    background-color: #E6F6FC;
+}
+
+.container-xl {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header section CSS ends here */
+
+
+/* Learning Environment Section CSS Start  */
+
+.card-body .card-title+p {
+    max-width: 324px;
+    margin: 10px auto 0
+}
+
+.card-box .image-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+/* This css is particularly for the thing that if there are multiple rows every third element will not have the right side border */
+.card-box:not(:nth-child(3n)) .image-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../images/icons/dash-line.png') no-repeat center center;
+    width: 100%;
+    height: 30px;
+    right: -53%;
+    z-index: -1;
+}
+
+/* this css is for in case we have un even child element out there so the border will be removed */
+.card-box:last-child .image-wrapper:after {
+    display: none;
+}
+
+/* first card image overlay */
+.overlay-image-card1 {
+    width: 270px;
+    height: 278px;
+    -webkit-mask-image: url('../images/card1-filled.png');
+    mask-image: url('../images/card1-filled.png');
+    mask-mode: alpha;
+    mask-repeat: no-repeat;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+/* second card image overlay */
+.overlay-image-card2 {
+    width: 270px;
+    height: 278px;
+    -webkit-mask-image: url('../images/card2-filled.png');
+    mask-image: url('../images/card2-filled.png');
+    mask-repeat: no-repeat;
+    mask-mode: alpha;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+/* third card image overlay */
+.overlay-image-card3 {
+    width: 289px;
+    height: 275px;
+    -webkit-mask-image: url('../images/card3-filled.png');
+    mask-image: url('../images/card3-filled.png');
+    mask-mode: alpha;
+    mask-repeat: no-repeat;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+/* Learning Environment Section CSS End  */
+
+/* Third Section CSS Start */
+
+.third-section {
+    padding: 80px 0 0;
+    overflow: hidden;
+}
+
+.third-section .doll-image>div>img {
+    max-height: 225px;
+}
+
+.third-section .doll-image {
+    min-height: 225px;
+    position: relative;
+}
+
+.third-section .doll-image:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 196px;
+    height: 196px;
+    background: #EDEDED;
+    border-radius: 50%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.third-section h6 {
+    margin-top: 20px;
+}
+
+.third-section .doll-image .hover-icon {
+    transform: scale(0);
+    transition: all 0.3s;
+}
+
+.third-section .doll-image:hover .hover-icon {
+    transform: scale(1);
+}
+
+.third-section .doll-image>div>img {
+    transition: top 0.5s ease-out;
+    position: relative;
+    z-index: 2;
+    top: 0;
+}
+
+.third-section .doll-image:hover>div>img {
+    top: -10px;
+}
+
+.third-section .doll-image>div {
+    z-index: 1;
+}
+
+.third-section .doll-image .butterfly-icon {
+    right: -30px;
+    top: 30px;
+}
+
+.third-section .doll-image .heart-icon1 {
+    left: -40px;
+    bottom: 50px;
+}
+
+.third-section .doll-image .icecream-icon {
+    left: -38px;
+    top: -10px;
+}
+
+.third-section .doll-image .cupcake-icon {
+    right: -32px;
+    bottom: 40px;
+}
+
+.third-section .doll-image .boat-icon {
+    left: 9px;
+    top: 0px;
+}
+
+.third-section .doll-image .cloud-icon1 {
+    right: -10px;
+    bottom: -19px;
+}
+
+.third-section .doll-image .rainbox-icon {
+    left: 20px;
+    top: -50px;
+}
+
+.third-section .doll-image .stars-icon {
+    right: 27px;
+    bottom: -30px;
+}
+
+.third-section .doll-image .cloud-icon {
+    left: -25px;
+    top: 50px;
+}
+
+.third-section .doll-image .heart-icon {
+    right: 0px;
+    top: 10px;
+}
+
+.third-section .box {
+    width: 20%;
+    text-align: center;
+}
+
+/* Third Section CSS End */
+
+/* Tab Section CSS Start */
+
+.nav-tabs {
+    border-bottom: none;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 16px;
+}
+
+.nav-tabs .nav-link {
+    padding: 12px 60px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    color: black;
+    font-weight: bold;
+
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    background-color: black;
+    border: 2px solid #000;
+    color: #fff;
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 3px;
+}
+
+.swiper-scrollbar-drag {
+    background-color: black;
+}
+
+.slider-section {
+    overflow: visible !important;
+    padding: 80px 0 0;
+}
+
+.slider-section .container {
+    overflow: visible !important;
+}
+
+.swiper {
+    overflow: visible !important;
+    padding-top: 31px;
+}
+
+.swiper-slide {
+    background: #fff;
+    border-radius: 8px;
+    height: auto;
+}
+
+.swiper-slide img:nth-child(2) {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-title {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.review-section {
+    margin-top: 7px;
+}
+
+.review-text {
+    font-size: 10px
+}
+
+.price {
+    font-size: 15px;
+    color: #D41A68;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.button .btn {
+    top: 15px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.slider-section .swiper-slide:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+.slider-section .swiper-slide:hover .price {
+    opacity: 0;
+}
+
+.slider-section .swiper-slide:hover .button .btn {
+    opacity: 1;
+}
+
+/* Tab Section CSS End */
+
+@media(max-width: 1200px) {
+    .third-section .box {
+        width: 33%;
+    }
+
+    header {
+        max-height: 601px;
+    }
+
+    .slider-section {
+        overflow: hidden !important;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        max-height: none;
+    }
+
+    .card-box:not(:last-child) .image-wrapper:after {
+        display: none;
+    }
+
+    .orange-shape {
+        top: -20%;
+    }
+
+    .green-shape {
+        right: -200px;
+    }
+
+    /* .image-section {
+        left: 0;
+        top: 0;
+        width: 100%;
+    } */
+
+    /* .overlay-image {
+        width: 100%;
+        height: auto;
+    }
+    .overlay-shape{
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        padding: 0px;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+
+    } */
+}
+
+@media (max-width: 768px) {
+    .third-section .box {
+        width: 50%;
+    }
+
+    .image-section {
+        position: relative;
+        right: 80px;
+        top: -100px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .h2-br {
+        display: none;
+    }
+
+    .third-section .box {
+        width: 100%;
+    }
+}
