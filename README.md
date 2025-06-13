@@ -29,6 +29,8 @@ https://jigsaw.w3.org/css-validator/
 
 I have used GSAP for animation, Swiper for slider functionality. There is mouse move animation in header. Text animation for headings.
 
+After completing the project, I have manually checked the spacing and other things. 
+
 ## Hosted
 URL is : https://stem-gold.vercel.app/
 Github: https://github.com/codechirag/stem.git
