@@ -122,3 +122,14 @@ gsap.from('.box', {
         start: 'top 80%',
     }
 });
+gsap.from('.tab-content', {
+    duration: 0.5,
+    delay: 0.2,
+    opacity: 0,
+    xPercent: 100,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".tab-content",
+        start: 'top 80%',
+    }
+});

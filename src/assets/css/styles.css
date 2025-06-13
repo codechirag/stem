@@ -88,6 +88,10 @@ header {
     position: relative;
 }
 
+header .left-section {
+    padding-left: 84px;
+}
+
 header .left-section .btn {
     z-index: 1;
 }
@@ -152,6 +156,7 @@ header p {
 
 .learning {
     background-color: #E6F6FC;
+    padding: 100px 0;
 }
 
 .container-xl {
@@ -469,7 +474,12 @@ header p {
     header {
         max-height: none;
     }
-
+    header .left-section {
+        padding-left: 20px;
+    }
+    .learning {
+        padding: 70px 0 40px;
+    }
     .card-box:not(:last-child) .image-wrapper:after {
         display: none;
     }
@@ -508,13 +518,18 @@ header p {
     .third-section .box {
         width: 50%;
     }
-
+    .image-section svg{
+        max-height: 500px;
+    }
     .image-section {
         position: relative;
         right: 80px;
         top: -100px;
         width: 100%;
         height: auto;
+    }
+    header .left-section {
+        padding-left: 0;
     }
 }
 
