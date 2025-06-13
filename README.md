@@ -14,7 +14,7 @@ This is a standard HTML project structure for a simple website.
 
 ## Getting Started
 
-To get started with this project, simply open the `index.html` file in your web browser.
+To get started with this project, please note that you have to run this project using live server or by uploading it on server.
 
 ## Technologies used
 I have used HTML, CSS, Bootstrap, GSAP for animation, Vanilla Javascript
