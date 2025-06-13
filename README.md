@@ -23,6 +23,9 @@ I have used HTML, CSS, Bootstrap, GSAP for animation, Vanilla Javascript
 I have started this project from header section then the image with svg mask was bit harder so It took some time then finally done. same thing for the next sections's 3 blocks. Then complete other sections. checked the responsive and moved to animation part added some good animations as per latest trends.
 
 Checked in HTML Validator all good and same goes for CSS validator, No errors in any of them.
+https://validator.w3.org/detailed.html#validate-by-input
+https://jigsaw.w3.org/css-validator/
+
 
 I have used GSAP for animation, Swiper for slider functionality. There is mouse move animation in header. Text animation for headings.
 
