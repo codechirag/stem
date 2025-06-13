@@ -33,6 +33,8 @@ I have used GSAP for animation, Swiper for slider functionality. There is mouse 
 
 After completing the project, I have manually checked the spacing and other things. 
 
+Fun Program section images were not properly sized in the figma so I have used temporary images.
+
 ## Hosted
 URL is : https://stem-gold.vercel.app/
 
